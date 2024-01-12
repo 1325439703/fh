@@ -400,6 +400,19 @@ span
     text-align: right;
 }
 </style>
+  <script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+$(function ($) {
+    setRootFontSize();
+});
+window.onresize = function () {
+    setRootFontSize();
+}
+function setRootFontSize() {
+    $('html').css('font-size', document.body.clientWidth / 15 + 'px');
+}
+    </script>
+
 </head>
 <body>
      <div id="Pan_WX">
